@@ -6,8 +6,8 @@
         public static void Main(String[] args)
         {
             Console.WriteLine("Welcome to Employee Wage Computation Program");
-            SwitchCase switchCase = new SwitchCase();
-            switchCase.CalculateWage();
+            EmpMonthlyWage empMonthlyWage = new EmpMonthlyWage();
+            empMonthlyWage.MonthlyWage();
         }
     }
 }
