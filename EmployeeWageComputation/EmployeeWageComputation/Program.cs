@@ -6,8 +6,8 @@
         public static void Main(String[] args)
         {
             Console.WriteLine("Welcome to Employee Wage Computation Program");
-            EmpMonthlyWage empMonthlyWage = new EmpMonthlyWage();
-            empMonthlyWage.MonthlyWage();
+            MonthlyWageFor100hrs monthlyWageFor100Hrs = new MonthlyWageFor100hrs();
+            monthlyWageFor100Hrs.CalculateEmpMonthlyWage();
         }
     }
 }
