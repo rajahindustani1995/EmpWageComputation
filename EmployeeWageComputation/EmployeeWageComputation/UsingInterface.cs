@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeWageComputation
 {
-<<<<<<< HEAD
-    internal class MultipleCompany
+    internal class MultipleCompany : IMultipleCompany
     {
         public const int IS_FULL_TIME = 1;
         public const int IS_PART_TIME = 2;
@@ -86,12 +85,5 @@ namespace EmployeeWageComputation
                 Console.WriteLine("Monthly wage for {0} is {1}", CompanyList[i], CompanyList[i + 1]);
             }
         }
-=======
-    internal interface IMultipleCompany
-    {
-        public void AddCompany(string CompanyName, int EmpWagePerhour, int FullTime_WorkingHrs_PerDay, int PartTime_WorkingHours_PerDay, int MAX_WORKING_HRS, int MAX_WORKING_DAYS);
-        public void CalculateEmpWage(string CompanyName);
-
->>>>>>> UC11-UsingInterfaceApproach
     }
 }
