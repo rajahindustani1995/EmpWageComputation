@@ -7,13 +7,14 @@
         {
             Console.WriteLine("Welcome to Employee Wage Computation Program");           
             
-            EmpWageArray empWageBuilder = new EmpWageArray();
+            MultipleCompany multipleCompany = new MultipleCompany(2);
+            multipleCompany.AddCompany("Jeep", 20, 8, 4, 100, 20);
+            multipleCompany.CalculateEmpWage("Jeep");
 
-            //Passing values to AddCompanyEmpWage method for further calculation
-            empWageBuilder.AddCompanyEmpWage("JEEP", 32, 22, 110);
-            empWageBuilder.AddCompanyEmpWage("TATA", 38, 20, 100);
+            multipleCompany.AddCompany("TATA", 30, 8, 4, 100, 20);
+            multipleCompany.CalculateEmpWage("TATA");
 
-            empWageBuilder.ComputeEmpWage();
+            multipleCompany.displayArray();
         }
     } 
 }
