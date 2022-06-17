@@ -6,10 +6,8 @@
         public static void Main(String[] args)
         {
             Console.WriteLine("Welcome to Employee Wage Computation Program");
-            MultipleCompanies multipleCompanies = new MultipleCompanies();
-            multipleCompanies.Companies();
-
-
+            SaveWageForEachCompany save = new SaveWageForEachCompany();
+            save.SaveForEachCompany();
 
         }
     } 
